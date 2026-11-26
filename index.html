@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Thanksgiving</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=EB+Garamond:ital,wght@0,500;1,500&display=swap">
+<style>
+body{margin:0;background:#2a140b}
+a{color:#f3c77a}a:hover{color:#ffe2a8}
+.tg-card{container-type:inline-size;perspective:1600px}
+.tg-photo{animation:tgSettle 2.6s cubic-bezier(.2,.7,.2,1) .6s both}
+@keyframes tgSettle{from{transform:scale(1.14);filter:brightness(.6) saturate(.8)}to{transform:scale(1);filter:none}}
+.tg-door-l{transform-origin:left center;animation:tgDoorL 1.5s cubic-bezier(.6,0,.25,1) .5s forwards}
+.tg-door-r{transform-origin:right center;animation:tgDoorR 1.5s cubic-bezier(.6,0,.25,1) .5s forwards}
+@keyframes tgDoorL{0%{transform:rotateY(0)}85%{opacity:1}100%{transform:rotateY(-112deg);opacity:0;visibility:hidden}}
+@keyframes tgDoorR{0%{transform:rotateY(0)}85%{opacity:1}100%{transform:rotateY(112deg);opacity:0;visibility:hidden}}
+.tg-pop{display:block;opacity:0;transform:scale(0);animation:tgPop .9s cubic-bezier(.34,1.56,.64,1) both}
+@keyframes tgPop{0%{opacity:0;transform:scale(0) translateY(40%)}55%{opacity:1;transform:scale(1.14) translateY(0)}75%{transform:scale(.95)}100%{opacity:1;transform:scale(1)}}
+.tg-rise{opacity:0;animation:tgRise 1s ease-out 3.3s both}
+@keyframes tgRise{from{opacity:0;transform:translateY(60%);letter-spacing:.2em}to{opacity:1;transform:none;letter-spacing:.01em}}
+.tg-glow{animation:tgGlow 1.6s ease-out 2.6s both}
+@keyframes tgGlow{0%{opacity:0;transform:scale(.3)}40%{opacity:.9}100%{opacity:0;transform:scale(1.6)}}
+.tg-hair-l{transform-origin:70% 0;animation:tgSwayL 3.4s ease-in-out infinite alternate}
+.tg-hair-r{transform-origin:30% 0;animation:tgSwayR 3.9s ease-in-out -1.2s infinite alternate}
+@keyframes tgSwayL{0%{transform:skewX(0) rotate(0)}35%{transform:skewX(-3deg) rotate(.6deg)}65%{transform:skewX(-1.5deg) rotate(.2deg)}100%{transform:skewX(-4.5deg) rotate(.9deg) scaleY(1.01)}}
+@keyframes tgSwayR{0%{transform:skewX(0) rotate(0)}40%{transform:skewX(3.5deg) rotate(-.6deg)}70%{transform:skewX(1.5deg)}100%{transform:skewX(4.5deg) rotate(-.8deg) scaleY(1.01)}}
+.tg-leaf{opacity:0;animation:tgFall linear infinite}
+@keyframes tgFall{0%{opacity:0;transform:translate(0,-10%) rotate(0)}10%{opacity:.95}50%{transform:translate(-30px,450%) rotate(200deg)}90%{opacity:.9}100%{opacity:0;transform:translate(25px,950%) rotate(400deg)}}
+.tg-replay{transition:background .2s,transform .2s}
+.tg-replay:hover{background:#f3c77a;color:#2a140b;transform:translateY(-1px)}
+.tg-replay:focus-visible{outline:3px solid #ffe2a8;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.tg-photo,.tg-hair-l,.tg-hair-r,.tg-leaf,.tg-glow{animation:none}.tg-door-l,.tg-door-r{animation-duration:.01s;animation-delay:0s}.tg-pop,.tg-rise{animation:none;opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<main style="min-height: 100vh; box-sizing: border-box; padding: 40px 20px 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; background: radial-gradient(ellipse at 50% 30%, #5a2a12 0%, #2a140b 70%); font-family: 'EB Garamond', Georgia, serif">
+<div style="width: min(560px, 100%); aspect-ratio: 1122 / 1402; position: relative">
+<div id="stage" style="position:absolute;inset:0">
+<div class="tg-card" style="position: absolute; inset: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(243,199,122,.35)">
+<div class="tg-photo" style="position: absolute; inset: 0">
+<img src="assets/card-bg.jpg" alt="Illustrated woman in a black dress standing in a sunlit autumn courtroom" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block">
+<img class="tg-hair-l" src="assets/hair-left.png" alt="" aria-hidden="true" style="position: absolute; left: 40.5526%; top: 38.5164%; width: 5.9715%; height: 11.7689%; display: block">
+<img class="tg-hair-r" src="assets/hair-right.png" alt="" aria-hidden="true" style="position: absolute; left: 51.1586%; top: 39.5863%; width: 3.6542%; height: 10.699%; display: block">
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none">
+<svg class="tg-leaf" viewBox="0 0 24 24" style="position: absolute; left: 12%; top: 0; width: 4.5%; animation-duration: 9s; animation-delay: 2.4s" aria-hidden="true"><path d="M12 2l2 5 4-2-1 5 4 1-4 3 2 3-5-1-1 6-1-6-5 1 2-3-4-3 4-1-1-5 4 2z" fill="#c2410c"></path></svg>
+<svg class="tg-leaf" viewBox="0 0 24 24" style="position: absolute; left: 30%; top: 0; width: 3.5%; animation-duration: 11s; animation-delay: 4.1s" aria-hidden="true"><path d="M12 2l2 5 4-2-1 5 4 1-4 3 2 3-5-1-1 6-1-6-5 1 2-3-4-3 4-1-1-5 4 2z" fill="#b91c1c"></path></svg>
+<svg class="tg-leaf" viewBox="0 0 24 24" style="position: absolute; left: 68%; top: 0; width: 4%; animation-duration: 10s; animation-delay: 3.0s" aria-hidden="true"><path d="M12 2l2 5 4-2-1 5 4 1-4 3 2 3-5-1-1 6-1-6-5 1 2-3-4-3 4-1-1-5 4 2z" fill="#d97706"></path></svg>
+<svg class="tg-leaf" viewBox="0 0 24 24" style="position: absolute; left: 84%; top: 0; width: 3.2%; animation-duration: 12s; animation-delay: 6.2s" aria-hidden="true"><path d="M12 2l2 5 4-2-1 5 4 1-4 3 2 3-5-1-1 6-1-6-5 1 2-3-4-3 4-1-1-5 4 2z" fill="#9a3412"></path></svg>
+<svg class="tg-leaf" viewBox="0 0 24 24" style="position: absolute; left: 50%; top: 0; width: 3%; animation-duration: 13s; animation-delay: 8s" aria-hidden="true"><path d="M12 2l2 5 4-2-1 5 4 1-4 3 2 3-5-1-1 6-1-6-5 1 2-3-4-3 4-1-1-5 4 2z" fill="#ea580c"></path></svg>
+</div>
+<div class="tg-glow" aria-hidden="true" style="position: absolute; left: 20%; top: 12%; width: 60%; height: 28%; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,240,200,.95), rgba(255,220,150,0) 100%); pointer-events: none"></div>
+<div style="position: absolute; left: 0; right: 0; top: 15.2%; display: flex; flex-direction: column; align-items: center; text-align: center; pointer-events: none">
+<h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 600; color: #6e0d17; line-height: 1.02; text-shadow: 0 2px 0 rgba(255,236,200,.6), 0 6px 18px rgba(120,40,10,.35)">
+<span class="tg-pop" style="font-size: 10.6cqw; animation-delay: 2.5s">Happy</span>
+<span class="tg-pop" style="font-size: 12cqw; letter-spacing: -.01em; animation-delay: 2.85s">Thanksgiving</span>
+</h1>
+<p class="tg-rise" style="margin: 2.6cqw 0 0; font-size: 3.4cqw; color: #6e0d17; font-weight: 500">With gratitude for courage and justice.</p>
+</div>
+<div class="tg-door-l" aria-hidden="true" style="position: absolute; left: 0; top: 0; width: 50%; height: 100%; box-sizing: border-box; background: linear-gradient(135deg, #7a1a14, #4a0e0b); border: 1.2cqw solid #c9933f; border-right-width: .3cqw; display: flex; align-items: center; justify-content: flex-end; backface-visibility: hidden">
+<div style="width: 10cqw; height: 20cqw; border-radius: 20cqw 0 0 20cqw; background: radial-gradient(circle at 100% 50%, #f3c77a, #a8701f); margin-right: -.3cqw"></div>
+</div>
+<div class="tg-door-r" aria-hidden="true" style="position: absolute; right: 0; top: 0; width: 50%; height: 100%; box-sizing: border-box; background: linear-gradient(225deg, #7a1a14, #4a0e0b); border: 1.2cqw solid #c9933f; border-left-width: .3cqw; display: flex; align-items: center; justify-content: flex-start; backface-visibility: hidden">
+<div style="width: 10cqw; height: 20cqw; border-radius: 0 20cqw 20cqw 0; background: radial-gradient(circle at 0% 50%, #f3c77a, #a8701f); margin-left: -.3cqw"></div>
+</div>
+</div>
+</div>
+</div>
+<button class="tg-replay" type="button" id="replay" style="min-height: 44px; padding: 10px 26px; border-radius: 999px; border: 1px solid #c9933f; background: transparent; color: #f3c77a; font-family: 'EB Garamond', Georgia, serif; font-size: 18px; letter-spacing: .06em; cursor: pointer">Open the card again</button>
+</main>
+<script>
+document.getElementById('replay').addEventListener('click', function () {
+  var stage = document.getElementById('stage');
+  var fresh = stage.cloneNode(true);
+  stage.parentNode.replaceChild(fresh, stage);
+});
+</script>
+</body>
+</html>
